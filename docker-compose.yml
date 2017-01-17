@@ -1,0 +1,12 @@
+version: '2'
+services:
+  ssh:
+    build: .
+    container_name: dev
+    hostname: devhost
+    ports:
+      - "22:8090"
+    volumes:
+      - $HOME/.zshrc:/home/dev
+      - $HOME/.vimrc:/home/dev
+      - $HOME/.tmux-conf:/home/dev
