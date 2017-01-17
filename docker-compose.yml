@@ -7,6 +7,8 @@ services:
     ports:
       - "8090:22"
     volumes:
-      - $HOME/.zshrc:/home/dev
-      - $HOME/.vimrc:/home/dev
-      - $HOME/.tmux-conf:/home/dev
+      - ~/.oh-my-zsh:/home/dev/.oh-my-zsh
+      - ~/.vim_runtime:/home/dev/.vim_runtime
+      - ~/.zshrc:/home/dev/.zshrc
+      - ~/.vimrc:/home/dev/.vimrc
+      - ~/.tmux.conf:/home/dev/.tmux.conf
