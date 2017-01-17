@@ -5,7 +5,7 @@ services:
     container_name: dev
     hostname: devhost
     ports:
-      - "22:8090"
+      - "8090:22"
     volumes:
       - $HOME/.zshrc:/home/dev
       - $HOME/.vimrc:/home/dev

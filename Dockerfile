@@ -18,7 +18,5 @@ RUN apt-get install sudo -y --no-install-recommends
 RUN useradd -m -u 1000 -g sudo -s /bin/zsh -p development dev
 RUN echo dev:development | chpasswd
 
-USER 1000
-WORKDIR /home/dev
 EXPOSE 22
 CMD /usr/sbin/sshd -D
